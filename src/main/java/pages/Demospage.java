@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Demospage {
   
-    @FindBy(xpath="//*[@id='content']//child::ul//li[1]")
+    @FindBy(xpath="//*[@id='content']//child::ul//li//a[text()='Draggable']")
     private WebElement Dragblelink;
     
 public Demospage (WebDriver driver) {
@@ -15,8 +15,10 @@ public Demospage (WebDriver driver) {
 		
 		PageFactory.initElements(driver, this);
 	}
-    public void drop() {
+    public void drop() throws InterruptedException {
+    	Thread.sleep(2000);
     	Dragblelink.click();
+    	Thread.sleep(2000);
     }
     
     
