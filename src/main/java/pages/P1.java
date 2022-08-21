@@ -24,8 +24,8 @@ public class P1 {
 	
 	//action
 	
-	public void dmsbtn() {
-		
+	public void dmsbtn() throws InterruptedException {
+		Thread.sleep(2000);
 		Demosbutton.click();		
 		
 	}
@@ -34,6 +34,7 @@ public class P1 {
 	public void abtbtn() {
 		
 		Aboutbutton.click();
+		
 	}
 	
 
