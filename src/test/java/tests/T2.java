@@ -18,4 +18,9 @@ public class T2 extends BaseTest {
 		ref2.drop();
 		
 	}
+	@Test (priority=2)
+	public void dwndlnk() throws InterruptedException {
+		ref2.down();
+		
+	}
 }
