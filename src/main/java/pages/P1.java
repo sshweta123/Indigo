@@ -31,8 +31,8 @@ public class P1 {
 	}
 	
 	
-	public void abtbtn() {
-		
+	public void abtbtn() throws InterruptedException {
+		Thread.sleep(2000);
 		Aboutbutton.click();
 		
 	}

@@ -14,7 +14,11 @@ public class T1 extends BaseTest {
 		
 	}
 
-	@Test (priority =1)
+	@Test (priority=1)
+	public void AbtbtnMethod() throws InterruptedException {
+		ref1.abtbtn();
+	}
+	@Test (priority=2)
 	public void DmsMethod() throws InterruptedException {
 		ref1.dmsbtn();
 		
